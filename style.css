@@ -11,7 +11,11 @@ html, body {
     height:100%;
 }
 
-/* Jednostavna navigacijska traka */
+/* 
+********************************
+Jednostavna navigacijska traka *
+********************************
+*/
 .nav {
     padding: 10px;
     background-color: rgba(7,44,153,1);
@@ -32,39 +36,32 @@ Navigacijska traka koja sadrži sve linkove na ostale stranice *
 ***************************************************************
 */
 .nav-secondary {
-    /* Pozicija je relative dok se ne nađe 15px od vrha ekrana,
-    tada postaje fixed */
-    position: sticky;
-    top:15px;
-    width: 100px;
-    margin-top:10px;
+    position: sticky; /* Pozicija je relative dok se ne nađe 15px od vrha ekrana, tada postaje fixed */
+    top:15px; 
+    width: 100px; /* Duljina elementa je 100px */
+    margin-top:10px; /* Margine */
     margin-left:10px;
-    padding:0;
-    border:lightgray solid 1px;
+    border:lightgray solid 1px; /* Granica */
     padding:10px;
-    /* Sjena */
-    box-shadow: 5px 6px 5px lightgray;
+    box-shadow: 5px 6px 5px lightgray; /* Sjena */
 }
 .nav-secondary .item {
-    /* Koristi flexbox kako bi centrirao tekst */
-    display:flex;
-    /* Centrira horizontalno */
-    justify-content: center;
-    /* Centrira vertikalno */
-    align-items: center;
-    height: 34px;
-    padding:7px 5px ;
+    display:flex; /* Koristi flexbox kako bi centrirao tekst */
+    justify-content: center; /* Centrira horizontalno */
+    align-items: center; /* Centrira vertikalno */
+    height: 34px; /* Visina */
+    padding:7px 5px; 
 }
 .nav-secondary a {
     color:black;
-    text-decoration: none;
+    text-decoration: none; /* Link nije podcrtan */
 }
 .nav-secondary a:hover {
-    color:white;
+    color:white; /* Link je bijel kada je pokriven pokazivaćem */
     text-decoration: none;
 }
-.nav-secondary .item:hover {
-    background-color: rgba(187,79,79,1);
+.nav-secondary .item:hover { /* Kada je link prekriven */
+    background-color: rgba(187,79,79,1); 
     color:white;
 }
 
@@ -74,29 +71,29 @@ Središnja komponenta stranice *
 *******************************
 */
 .main-container {
-    position: absolute;
-    left: 150px;
-    right: 15px;
-    top:50px;
-    bottom:150px;
-    overflow-y: scroll;
+    position: absolute; /* Apsolutno pozicioniran */
+    left: 150px; /* Udaljenost od lijevog ruba */
+    right: 15px; /* Udaljenost od desnog ruba */
+    top:50px; /* Udaljenost od vrha */
+    bottom:150px; /* Udaljenost od dna */
+    overflow-y: scroll; /* Element će imati scrollbar */
 }
 
 /* Element koji zauzima pola duljine roditelja */
 .col {
     width: 49%;
-    height: auto;
+    height:auto;
     margin:0;
-    display:inline-block;
-    position:relative;
+    display:inline-block; /* Ne mora zauzimati cijelu širinu */
+    position:relative; /* Pozicioniran relativno prema drugim komponentama */
 }
 /* Element koji zauzima cijelu duljinu roditelja */
 .row {
     width:100%;
     height: auto;
     margin:0;
-    display:block;
-    position:relative;
+    display:block; /* Zauzima cijelu širinu */
+    position:relative; /* Pozicioniran relativno prema drugim komponentama */
 }
 
 /*
@@ -107,8 +104,7 @@ Stilovi za fancy linkove na početnoj stranici *
 img {
     width:100%;
     height:300px;
-    /* Brine se za to da slika pokrije cijeli gumb */
-    object-fit:cover;
+    object-fit:cover; /* Brine se za to da slika pokrije cijeli gumb */
 }
 /* Stilovi za tekst unutar gumba na početnoj stranici */
 .sports-btn span {
