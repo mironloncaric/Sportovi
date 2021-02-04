@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="nav">
+        <div class="nav-logo"><a href="/index.html">SportsWebsite</a></div>
+    </nav>
+
+    <!-- Secondary navigation bar -->
+    <div class="nav-secondary">
+        <div id="nav-secondary-content">
+            <a href="/kolektivni.html"><div class="item">Kolektivni sportovi</div></a>
+            <a href="/individualni.html"><div class="item active">Individualni sportovi</div></a>
+            <a href="/zimski.html"><div class="item">Zimski sportovi</div></a>
+            <a href="/ljetni.html"><div class="item">Ljetni sportovi</div></a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-container">
+        <div class="col sports-btn">
+            <a href="#timski" onmouseover="footballSet()" onmouseout="footballRemove()" >
+                <img id="football-btn" class="bg-red" src="images/i.jpg" />
+                <span>Kolektivni sportovi</span>
+            </a>
+        </div>
+        <div class="col sports-btn">
+            <a href="#individualni" onmouseout="archeryRemove()" onmouseover="archerySet()" >
+                <img id="archery-btn" class="bg-blue" src="images/j.jpg" />
+                <span>Individualni sportovi</span>
+            </a>
+        </div>
+        <div class="col sports-btn">
+            <a href="#zimski" onmouseover="skijanjeSet()" onmouseout="skijanjeRemove()" >
+                <img id="skijanje-btn" class="bg-light-blue" src="images/skijanje.jpg" />
+                <span>Zimski sport</span>
+            </a>
+        </div>
+        <div class="col sports-btn">
+            <a href="#individualni" onmouseout="plivanjeSet()" onmouseover="plivanjeRemove()" >
+                <img id="plivanje-btn" class="bg-yellow" src="images/plivanje.jpg" />
+                <span>Ljetni sportovi</span>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div>A Miron Lončarić & Tin Brletić Production</div>
+        <div>Contant info:</div>
+        <div>Mobile Number: 420 69 69</div>
+        <div>Email: nice@yahoo.com</div>
+    </div>
+    <script>
+        function archerySet() {
+            document.getElementById("archery-btn").setAttribute("src", "images/golf.gif")
+        }
+        function archeryRemove() {
+            document.getElementById("archery-btn").setAttribute("src", "images/j.jpg")
+        }
+        function footballSet() {
+            document.getElementById("football-btn").setAttribute("src", "images/basketball.gif")
+        }
+        function footballRemove() {
+            document.getElementById("football-btn").setAttribute("src", "images/i.jpg")
+        }
+        function skijanjeSet() {
+            document.getElementById("skijanje-btn").setAttribute("src", "images/skijanje.gif")
+        }
+        function skijanjeRemove() {
+            document.getElementById("skijanje-btn").setAttribute("src", "images/skijanje.jpg")
+        }
+        function plivanjeSet() {
+            document.getElementById("plivanje-btn").setAttribute("src", "images/plivanje.jpg")
+        }
+        function plivanjeRemove() {
+            document.getElementById("plivanje-btn").setAttribute("src", "images/surfanje.gif")
+        }
+    </script>
+</body>
+</html>
