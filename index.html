@@ -20,6 +20,7 @@
             <a href="/individualni.html"><div class="item active">Individualni sportovi</div></a>
             <a href="/zimski.html"><div class="item">Zimski sportovi</div></a>
             <a href="/ljetni.html"><div class="item">Ljetni sportovi</div></a>
+            <a href="/olimpijske.html"><div class="item">Olimpijski sportovi</div></a>
         </div>
     </div>
 
@@ -47,6 +48,12 @@
             <a href="#individualni" onmouseout="plivanjeSet()" onmouseover="plivanjeRemove()" >
                 <img id="plivanje-btn" class="bg-yellow" src="images/plivanje.jpg" />
                 <span>Ljetni sportovi</span>
+            </a>
+        </div>
+        <div class="row sports-btn">
+            <a href="#olimpijski" onmouseover="olimpijskiSet()" onmouseout="olimpijskiRemove()" >
+                <img id="olimpijski-btn" class="bg-green" src="images/olympic.jpg" />
+                <span>Kolektivni sportovi</span>
             </a>
         </div>
     </div>
@@ -80,6 +87,12 @@
         }
         function plivanjeRemove() {
             document.getElementById("plivanje-btn").setAttribute("src", "images/surfanje.gif")
+        }
+        function olimpijskiSet() {
+            document.getElementById("olimpijski-btn").setAttribute("src", "images/running.gif")
+        }
+        function olimpijskiRemove() {
+            document.getElementById("olimpijski-btn").setAttribute("src", "images/olympic.jpg")
         }
     </script>
 </body>

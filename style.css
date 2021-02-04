@@ -64,8 +64,14 @@ html, body {
     width: 49%;
     height: auto;
     margin:0;
-    border:solid lightgray 1px;
     display:inline-block;
+    position:relative;
+}
+.row {
+    width:100%;
+    height: auto;
+    margin:0;
+    display:block;
     position:relative;
 }
 img {
@@ -74,20 +80,19 @@ img {
     object-fit:cover;
 }
 .bg-red {
-    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
 }
 .bg-blue {
-    -webkit-filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
     filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
 }
 .bg-light-blue {
-    -webkit-filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
 }
 .bg-yellow {
-    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(10deg) saturate(600%) contrast(0.8);
+}
+.bg-green {
+    filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(110deg) saturate(600%) contrast(0.8);
 }
 .sports-btn span {
     z-index: 5;
