@@ -201,6 +201,12 @@ manja od 650px */
         width:100%;
     }
 }
+/*
+**********************
+Parallax (odprilike) *
+**********************
+*/
+/* Postavlja drugačiju pozadinsku sliku za svaki parallax container */ 
 .parallax-kosarka {
     background-image: url("images/kosarka.jpg");
 }
@@ -216,12 +222,15 @@ manja od 650px */
 .main-container p {
     font-size:20px;
 }
+/* Tekst unutar parallaxa */
 .parallax .opis {
     font-size: 30px;
     color:white;
+    /* Crni outline teksta */
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
 }
+/* Kreiranje konteinera visine 500px sa fiksiranom pozadinom */
 .parallax {
     /* Set a specific height */
     height: 500px;
