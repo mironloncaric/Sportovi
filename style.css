@@ -215,6 +215,12 @@ Parallax (odprilike) *
 .parallax-plivanje {
     background-image: url("images/plivanje.jpg");
 }
+.parallax-olimpijada {
+    background-image: url("images/olympics.jpg");
+}
+.parallax-olimpijada-grcka {
+    background-image: url("images/olimpijada-grcka.jpg");
+}
 .main-container p {
     font-size:20px;
 }
