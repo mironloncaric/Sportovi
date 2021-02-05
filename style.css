@@ -244,3 +244,6 @@ Parallax (odprilike) *
     background-size: cover;
     padding-left:7px;
 }
+iframe {
+    width:100%;
+}
